@@ -1,0 +1,473 @@
+.border {
+  border: 1px solid red;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+#burger_product_maker_body {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+#burger_product_maker_body .burger_maker_demo_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body {
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  width: 50%;
+  min-width: 250px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul {
+  padding: 10px;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li img {
+  width: 140px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li .details {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li .details::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -43px;
+  height: 1px;
+  border-top: 1px dashed #c7c7c7;
+  width: 33px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li .details input {
+  width: 70px;
+  margin-right: 10px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li .details h6 {
+  min-width: 67px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li .details h6:nth-child(1) {
+  width: 57px;
+  text-align: right;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li .details i {
+  border: 1px solid tomato;
+  padding: 9px;
+  border-radius: 3px;
+  color: tomato;
+  transition-duration: 0.3s;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li .details i:hover {
+  color: white;
+  background: tomato;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li.total_price {
+  justify-content: flex-end;
+  align-items: center;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li.total_price span:last-child {
+  min-width: 190px;
+  text-align: left;
+  padding-left: 10px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_qty {
+  width: calc(50% - 30px);
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_qty ul {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  justify-content: center;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_qty ul li {
+  height: 130px;
+  width: 130px;
+  border: 1px solid #c7c7c7;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: space-evenly;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_qty ul li:hover {
+  box-shadow: 0px 0px 10px #c7c7c7;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_qty ul li h3 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 20px;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_qty ul li img {
+  width: 100%;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_list {
+  width: 100%;
+}
+#burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_list ul li img {
+  cursor: pointer;
+}
+.menu_card {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.menu_card h3 {
+  color: #050404;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu_card .offer_btn_slide a {
+  margin-left: 0;
+}
+#backend_body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+  /*
+ * Navbar
+ */
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#backend_body .feather {
+  width: 16px;
+  height: 16px;
+}
+#backend_body header {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr;
+}
+#backend_body header .dashboard_logo {
+  display: flex;
+}
+#backend_body header .dashboard_logo a {
+  display: block;
+  text-align: center;
+  flex: 1;
+}
+#backend_body header .dashboard_logo button {
+  margin-left: 10px;
+}
+@media (min-width: 576px) {
+  #backend_body header .dashboard_logo {
+    width: 250px;
+  }
+}
+#backend_body header .navbar-nav {
+  text-align: right;
+}
+#backend_body #sidebarMenu {
+  /* position: fixed; */
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100;
+  /* Behind the navbar */
+  padding: 48px 0 0;
+  /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 49px);
+  overflow-y: scroll;
+  padding-left: 20px;
+}
+@media (max-width: 767.98px) {
+  #backend_body .sidebar {
+    top: 5rem;
+  }
+}
+#backend_body .sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+#backend_body .sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+#backend_body .sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+#backend_body .sidebar .nav-link.active {
+  color: #2470dc;
+}
+#backend_body .sidebar .nav-link:hover .feather,
+#backend_body .sidebar .nav-link.active .feather {
+  color: inherit;
+}
+#backend_body .sidebar-heading {
+  font-size: 0.75rem;
+}
+#backend_body .navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+}
+#backend_body .navbar .navbar-toggler {
+  top: 0.25rem;
+  right: 1rem;
+}
+#backend_body .navbar .form-control {
+  padding: 0.75rem 1rem;
+}
+#backend_body .form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+#backend_body .form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+#backend_body #backend_body main {
+  height: calc(100vh - 44px);
+  overflow-y: scroll;
+}
+#backend_body #sidebarMenu::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 25px;
+}
+#backend_body #sidebarMenu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#backend_body #sidebarMenu::-webkit-scrollbar-thumb {
+  background: #682323;
+  border-radius: 25px;
+}
+#backend_body #sidebarMenu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#backend_body .nav-item {
+  padding: 0px 0px;
+}
+#backend_body .nav-item .nav-link {
+  padding: 5px 0px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+  transition-duration: 0.3s;
+  color: #6e6e6e;
+}
+#backend_body .nav-item .sign-out-btn {
+  border: 0;
+  color: white;
+  text-transform: capitalize;
+}
+#backend_body .nav-item:last-child a {
+  border-bottom: 1px solid transparent;
+}
+#backend_body .nav-item:hover a {
+  color: #000000;
+  border-bottom: 1px solid #682323;
+}
+#backend_body .nav-item:hover .sign-out-btn {
+  border: 0;
+  color: #ff7700;
+}
+@media (max-width: 991.99px) {
+  #backend_body #sidebarMenu {
+    max-width: 200px;
+    display: none;
+  }
+  #backend_body #sidebarMenu.show {
+    display: block;
+  }
+}
+#backend_body .main_content {
+  overflow-y: scroll;
+  height: calc(100vh - 49px);
+}
+.custom_check_box {
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.custom_check_box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.custom_check_box .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #c7c7c7;
+}
+.custom_check_box .checkmark.disabled {
+  background-color: red;
+  border-radius: 50%;
+}
+.custom_check_box .checkmark.disabled:hover {
+  background-color: #980000;
+}
+.custom_check_box .checkmark.disabled::before {
+  content: "+";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transform: rotate(45deg);
+  font-size: 15px;
+  color: white;
+}
+.custom_check_box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.custom_check_box input:checked ~ .checkmark {
+  background-color: #2196F3;
+  border-radius: 50%;
+}
+.custom_check_box .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom_check_box input:checked ~ .checkmark:after {
+  display: block;
+}
+.custom_check_box .checkmark:after {
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg) translate(-126%, -32%);
+}
+.table_list {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+  justify-content: space-between;
+}
+.table_list .single_table {
+  position: relative;
+  border: 1px solid #dedede;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 10px #d4d4d4;
+}
+.table_list .single_table .table_no {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+  background-color: gray;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  border-radius: 50%;
+}
+.table_list .single_table .custom_check_box {
+  position: absolute;
+}
+.table_list .single_table .custom_check_box:nth-child(1) {
+  left: 4px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.table_list .single_table .custom_check_box:nth-child(2) {
+  top: 4px;
+  left: 40%;
+  transform: translateX(-50%);
+}
+.table_list .single_table .custom_check_box:nth-child(3) {
+  top: 40%;
+  right: 29px;
+  transform: translateY(-50%);
+}
+.table_list .single_table .custom_check_box:nth-child(4) {
+  bottom: 20px;
+  right: 60%;
+  transform: translateX(50%);
+}
+.about_item:hover .offer_btn_slide a {
+  background: #b98d36;
+  color: #ffffff;
+  transition: 0.6s;
+}
+@media (max-width: 767px) {
+  #burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_qty,
+  #burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body {
+    width: 100%;
+  }
+  #burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li img {
+    width: 70px;
+  }
+}
+/*# sourceMappingURL=./burger.css.map */

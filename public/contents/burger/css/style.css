@@ -1,0 +1,803 @@
+/* All Common CSS Start  */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;
+}
+a, a:hover{
+    text-decoration: none;
+    display: inline-block;
+    
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+/* All Common CSS End  */
+
+/* topnav part start */
+#topnav{
+    padding: 10px 0px;
+    background: #6d6262;
+
+}
+.topnav_text_part h3{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    padding-top: 10px;
+}
+.topnav_icon_part i{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.topnav_icon_part a{
+     
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+    background: none;
+    color: none;
+    
+}
+.twt{
+    color: #b98d36;
+}
+/* topnav part end */
+
+
+
+/* menu part start */
+
+    .navbar{
+        background: #DCD0C9;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+   .navbar-nav .nav-link{       
+       font-size: 15px;
+       font-weight: 700;
+       color: #282b2e;
+       font-family: 'Playfair Display', serif;
+       text-transform: uppercase;
+       opacity: .8;
+       
+      
+   }
+   .navbar-nav .nav-link:hover{
+       color: #b98d36;
+       transition: 0.4s;
+   }
+   .nav-link {
+       padding: 0px 25px;
+
+   }
+   .rsvtn_one{
+       border: 1px solid #b98d36;
+       padding: 5px 25px;
+       font-size: 25px;
+       color: #b98d36;
+       font-weight: 800;
+       font-family: 'Playfair Display', serif;
+       
+   }
+   .rsvtn_one:hover{
+       background: #b98d36;
+       color: #fff;
+       transition: .4s;
+   }
+
+
+/* menu part end */
+
+/* Banner Part Start */
+   #banner{
+       
+       background: url(../images/landing-parallax.jpg);
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+   }
+   .banner_overly{
+    padding-top: 260px;
+    padding-bottom: 200px;
+    background: rgba(0, 0, 0, 0.7);
+
+   }
+   .banner_text h2{
+       color: #b98d36 ;
+       font-size: 64px;
+       font-weight: 800;
+       font-family: 'Playfair Display', serif;
+    }
+    .banner_text h3{
+       color: #fff;
+       font-size: 54px;
+       font-weight: 800;
+       font-family: 'Playfair Display', serif;
+       padding: 20px 0px;
+    }
+    .banner_text p {
+        color: #e8e1e1;
+        line-height: 28px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Playfair Display', serif;
+        padding-right: 500px;
+        padding-left: 20px;
+    }
+
+    .Banner_rsvtn .rsvtn_one{
+        border: 1px solid #b98d36;
+        padding: 5px 25px;
+        font-size: 25px;
+        color: #b98d36;
+        font-weight: 800;
+        margin-top: 20px;
+        
+    }
+    .Banner_rsvtn .rsvtn_one:hover{
+        background: #b98d36;
+        color: #fff;
+    }
+
+
+/* Banner Part End */
+
+/* History Part start */
+    #history{
+        padding-top: 150px;
+        padding-bottom: 100px;
+        background: url(../images/history\ pic.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }   
+    .histry_txt h2{
+        color: rgb(0, 0, 0) ;
+        font-size: 80px;
+        font-weight: 800;
+        font-family: 'Playfair Display', serif;
+        padding-bottom: 50px;
+        letter-spacing: 0;
+    }
+    .histry_txt h3{
+        padding-bottom: 40px;
+        line-height: 24px;
+        color: rgb(19, 18, 18) ;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+    .histry_txt p{
+        color: rgb(34, 33, 33) ;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .histry_txt a{
+        margin-top: 25px;
+        color: rgb(9, 8, 8);
+        border: 1px solid #b98d36;
+        padding: 5px 15px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;       
+    }
+    .histry_txt a:hover{
+        background: #b98d36;
+        color: #fff;
+        transition: 0.6s;
+    }
+
+
+/* History Part End */
+
+/* Short Menu Part Start */
+    #offerslide{
+        padding-bottom: 110px;
+        background: rgb(220, 211, 211);
+        position: relative;
+
+    }
+    .offer_img_txt{
+        position: absolute;
+        width: 600px;
+        background: rgb(255, 255, 255);
+        height: 400px;
+        top: 0;
+        right: 0;
+        padding: 50px 0px;
+    }
+    .offer_img_txt h3{
+        margin-left: 25px;
+        color: #050404;       
+        font-size: 36px;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;  
+    }
+    .offer_img_txt h4{
+        margin-left: 25px;
+        padding-top: 25px;
+        color: #b98d36;       
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'Playfair Display', serif;
+    }
+    .offer_img_icon{
+        margin-top: 50px;
+        margin-left: 25px;
+    }
+    .offer_img_icon span {        
+        color: #b98d36;       
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'Playfair Display', serif;
+        padding-left: 10px;
+    }
+    .offer_img_icon i {        
+        color: #b98d36;       
+        font-size: 14px;
+        margin-right: 15px;       
+    }
+    .offer_img_icon ul li {        
+        color: #6d6262;       
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Playfair Display', serif;        
+    }
+
+    .offer_btn_slide a{
+        margin-left: 35px;
+        margin-top: 25px;
+        color: #050404;
+        border: 1px solid #b98d36;
+        padding: 5px 15px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+    }
+
+    .offer_btn_slide a:hover{
+        background: #b98d36;
+        color: #ffffff;
+        transition: 0.6s;
+    }
+    
+    .offerslide_img img{
+        position: relative;
+
+    }
+    .offer_text {
+        z-index: 999;
+    }
+
+/* Short Menu Part Start */
+
+
+/* About Part Start */
+    #about{
+        padding-top: 100px;
+        padding-bottom: 120px;
+        background: rgb(247, 242, 242);
+    }
+    .about_item{
+        background: #fff;
+        padding: 20px 20px;
+        visibility: visible;
+        opacity: 1;
+        
+    }
+    .about_icon img{
+        cursor: pointer;
+    }
+    .about_item:hover{
+        background: #111;
+        transition: 1s;
+        visibility: visible;
+        opacity: 1;
+    }
+    .about_txt h3{
+        padding-top: 20px;
+        padding-bottom: 15px;
+        color: #050404;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .about_txt p{
+        color: #524f4f ;
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-left: 31px;
+        padding-right: 40px;
+    }
+    .about_item:hover .about_txt h3{
+        color: #b98d36;
+    }
+    .about_item:hover .about_txt p{
+            color: #fff;
+        }
+
+/* About Part End */
+
+/* offer Part Start */
+    #offer{
+        background: url(../images/landing-parallax.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .offer_overly{
+        background: rgba(5, 4, 4, 0.8);
+        padding: 100px;
+    }
+    .offer_up_text h2{
+        font-size: 48px;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+    }
+    .offer_up_text p{
+        padding-top: 15px;
+        padding-bottom: 70px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: rgb(100, 95, 95);
+    }
+    .kicuakta_btn{
+        position: relative;
+        display: inline-block;
+    }
+    .icon_down {
+        position: absolute;
+        top: 35px;
+        left: 45px;
+        height: 50px;
+        width: 50px;
+        background: none;
+    }
+    .icon_down i{
+	    font-size: 50px;
+        color: #b98d36;
+	
+    }    
+    .offer_btn button{
+        border: 1px solid #b98d36;
+        border-radius: 5px;        
+        color: #DCD0C9;        
+        background: none;
+        font-size: 24px;
+        font-weight: 600;
+        margin-right: 15px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    button h3{
+        color: #DCD0C9;
+        font-family: 'Playfair Display', serif;
+        background: none;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 15px 25px 10px 25px;
+    }
+    button p{
+        padding-bottom: 10px;
+        color: #6d6262;
+        font-family: 'Raleway', sans-serif;
+        background: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .offer_img_part{
+        position: relative;
+    }
+    .offer_img_part:hover img{ 
+        color: rgba(17, 17, 17, 0.7);
+    }
+    .offer_img_text_up_one{
+        position: absolute;
+        left: 30px;
+        bottom: 320px;
+        font-family: Raleway,sans-serif;
+        color: #fff;
+        font-size: 24px;
+        line-height: 10px;
+        font-weight: 300;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .offer_img_text_up_one h3{
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+    }
+    .offer_img_text_up_one p{    
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .offer_img_text_up_two{
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        font-family: Raleway,sans-serif;
+        color: #fff;
+        font-size: 24px;
+        line-height: 10px;
+        font-weight: 300;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .offer_img_text_up_two h3{
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+    }
+    .offer_img_text_up_two p{    
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+/* offer Part End */
+
+/* reservation Part Start */
+    #reservation{        
+        background: url(../images/history\ pic.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .rsvn_overly{
+        padding: 100px;
+        background: rgba(5, 4, 4, 0.8);
+
+    }
+    .rsvn_up_text h2{
+        color: #DCD0C9;
+        font-family: 'Playfair Display', serif;
+        background: none;
+        font-size: 48px;
+        font-weight: 600;
+        padding-bottom: 15px;
+    }
+    .rsvn_up_text h3{
+        color: #DCD0C9;
+        font-family: 'Playfair Display', serif;
+        background: none;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 70px;
+    }
+    .rsvn_up_text p{
+        color: #DCD0C9;
+        font-family: 'Raleway', sans-serif;
+        background: none;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 15px;
+        
+    }
+    .rsvn_up_text span {
+        color: #b98d36;
+        font-family: 'Raleway', sans-serif;
+        background: none;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 20px;
+        
+    }
+    
+    .rsvn_form input{ 
+        padding-left: 10px;       
+       padding-right: 240px; 
+       padding-top: 10px;
+       padding-bottom: 10px;
+       background: #DCD0C9;
+       color: #111;
+       margin-bottom: 10px;
+       border: 1px solid #fff;       
+    }
+    .tm {
+        width: 415px;
+        height: 46px;
+    }
+    .submit_btn a{
+        margin-top: 25px;
+        color: #b98d36;
+        border: 1px solid #b98d36;
+        padding: 10px 50px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;       
+    }
+    .submit_btn a:hover{
+        background: #b98d36;
+        color: #fff;
+    }
+
+/* reservation Part End */
+
+/* Client Review Part Start */
+    #review{
+        padding: 105px;
+        background: #ffffff;
+    }
+    .review_up_text h3{
+        font-size: 45px;
+        font-weight: 600;
+        color: #b98d36;
+        font-family: 'Playfair Display', serif;
+        padding-bottom: 15px;
+    }
+    .review_up_text p{
+        font-size: 15px;
+        font-weight: 600;
+        color: #524f4f;
+        font-family: 'Playfair Display', serif;
+    }
+    .review_down_txt h2{
+        font-size: 20px;
+        font-weight: 500;
+        color: #b98d36;
+        font-family: 'Playfair Display', serif;
+        padding-bottom: 15px;
+        padding-top: 80px;
+    }
+    .review_down_txt p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #6d6262;
+        font-family: 'Playfair Display', serif;
+        padding-bottom: 10px; 
+        text-align: center;
+        align-items: center;
+
+
+    }
+    .review_img img{
+        border-radius: 50px;
+        margin: 0 auto;
+    }
+    
+    .review_overly{
+        position: relative;
+    }
+    .bame{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        z-index: 11;
+    }
+    .dane{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        z-index: 12;
+    }
+    
+/* Client Review Part End */
+
+/* footer part Start */
+#footer{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #111;
+
+}
+/* Footer 1st colom star */
+.ftr_text_item{
+    margin-top: 20px;
+}
+.ftr_text_item ul li i{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.ftr_text_item ul li span{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    color: #6d6262;
+    padding-left: 10px;
+}
+/* Footer 1st colom ENd */
+
+/* Footer 2nd colom star */
+.opn_time_up_txt{
+    padding-top: 25px;
+
+}
+.opn_time_up_txt h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20px;  
+    text-transform: uppercase;  
+}
+.opn_time_dwn_txt h3{
+    color: #6d6262;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.opn_time_dwn_txt p{
+    color: #b98d36;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 5px;
+}
+.opn_time_dwn_txt span{
+    color: #6d6262;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20px;
+}
+hr{
+    border-color: rgba(255, 255, 255, 0.5);
+}
+/* Footer 2nd colom ENd */
+
+/* Footer 3rd colom star */
+.ftr_menu_text{
+    padding-top: 25px;
+    padding-left: 30px;
+    
+}
+.ftr_menu_text h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20px;  
+    text-transform: uppercase; 
+}
+.menu_link_ftr ul li a {
+    list-style: none;
+    color: #6d6262;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: normal;
+    padding-left: 30px;
+    
+}
+.menu_link_ftr ul li a:hover{
+    color: #fff;
+    background: #111;    
+}
+
+/* Footer 3rd colom ENd */
+
+/* Footer 4th colom star */
+.ftr_last_item{
+    padding-top: 25px;
+}
+.last_item_txt h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20px;  
+    text-transform: uppercase;
+}
+.last_item_txt p{
+    color: #6d6262;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 10px;    
+}
+.last_item_txt input {
+	background: #DCD0C9;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 80px;	
+	padding-top: 10px;
+    box-shadow: 1px solid #6d6262;
+}
+.ftr_subcribe_btn a{
+    margin-top: 25px;
+    color: #b98d36;
+    border: 1px solid #b98d36;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase; 
+    text-align: center;
+}
+.ftr_subcribe_btn a:hover{
+    background: #b98d36;
+    color: #fff;
+    transform: 0.4s;
+
+}
+/* Footer 4th colom ENd */
+/* footer part End */
+
+/* cpyright part Start */
+.cpyriht_text p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #6d6262;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    padding-top: 10px;
+}
+.cpyriht_text a{
+    font-size: 16px;
+    font-weight: 300;
+    color: #b98d36;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    padding-top: 10px;
+    list-style: none;
+}
+
+.cpyriht_text a:hover{
+    color: #b98d36;
+    animation: infinite;    
+}
+
+.ftr_end_icon i{
+    padding-top: 10px;
+    font-size: 30px;
+    padding-left: 15px;
+}
+.ftr_end_icon a{
+    list-style: none;
+}
+.ml-auto{
+    margin-right: 0 auto !important;
+
+}
+/* cpyright part End */
+
+
+
+
+/* About Part Start */
+/* About Part End */
+/* About Part Start */
+/* About Part End */
+/* About Part Start */
+/* About Part End */
+

@@ -1,0 +1,563 @@
+.border {
+    border: 1px solid red;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+#burger_product_maker_body {
+    .noselect;
+
+    .burger_maker_demo_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 30px;
+
+        .burger_show_demo_body {
+            border: 1px solid rgb(199, 199, 199);
+            border-radius: 5px;
+            width: 50%;
+            min-width: 250px;
+
+            ul {
+                padding: 10px;
+                margin: 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+
+                li {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5px 0px;
+
+                    img {
+                        width: 140px;
+                    }
+
+                    .details {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        // .border;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: -43px;
+                            height: 1px;
+                            border-top: 1px dashed #c7c7c7;
+                            width: 33px;
+                        }
+
+                        input {
+                            width: 70px;
+                            margin-right: 10px;
+                        }
+
+                        h6 {
+                            min-width: 67px;
+
+                            &:nth-child(1) {
+                                width: 57px;
+                                text-align: right;
+                            }
+                        }
+
+                        i {
+                            border: 1px solid tomato;
+                            padding: 9px;
+                            border-radius: 3px;
+                            color: tomato;
+                            transition-duration: .3s;
+
+                            &:hover {
+                                color: white;
+                                background: tomato;
+                            }
+                        }
+                    }
+
+                    &.total_price {
+                        // .border;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        span {
+                            &:last-child {
+                                min-width: 190px;
+                                text-align: left;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .burger_ingredient_qty {
+            // .border;
+            width: calc(50% - 30px);
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                grid-gap: 20px;
+                justify-content: center;
+
+                li {
+                    height: 130px;
+                    width: 130px;
+                    border: 1px solid rgb(199, 199, 199);
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    display: grid;
+                    align-content: space-evenly;
+                    text-align: center;
+                    transition-duration: .3s;
+
+                    &:hover {
+                        box-shadow: 0px 0px 10px rgb(199, 199, 199);
+                    }
+
+                    h3 {
+                        margin-bottom: 0;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .burger_ingredient_list {
+            // .border;
+            width: 100%;
+
+            ul {
+                li {
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu_card {
+    margin-bottom: 30px;
+    text-align: center;
+
+    h3 {
+        color: #050404;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .offer_btn_slide a {
+        margin-left: 0;
+    }
+}
+
+
+#backend_body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+
+    .feather {
+        width: 16px;
+        height: 16px;
+    }
+
+    header {
+        display: grid !important;
+        grid-template-columns: 2fr 1fr;
+
+        .dashboard_logo {
+            display: flex;
+
+            a {
+                display: block;
+                text-align: center;
+                flex: 1;
+            }
+
+            button {
+                margin-left: 10px;
+            }
+
+            @media (min-width: 576px) {
+                width: 250px;
+            }
+        }
+
+        .navbar-nav {
+            text-align: right;
+        }
+    }
+
+    #sidebarMenu {
+        /* position: fixed; */
+        top: 0;
+        /* rtl:raw:
+  right: 0;
+  */
+        bottom: 0;
+        /* rtl:remove */
+        left: 0;
+        z-index: 100;
+        /* Behind the navbar */
+        padding: 48px 0 0;
+        /* Height of navbar */
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+        height: calc(100vh - 49px);
+        overflow-y: scroll;
+        padding-left: 20px;
+    }
+
+    @media (max-width: 767.98px) {
+        .sidebar {
+            top: 5rem;
+        }
+    }
+
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .sidebar .nav-link .feather {
+        margin-right: 4px;
+        color: #727272;
+    }
+
+    .sidebar .nav-link.active {
+        color: #2470dc;
+    }
+
+    .sidebar .nav-link:hover .feather,
+    .sidebar .nav-link.active .feather {
+        color: inherit;
+    }
+
+    .sidebar-heading {
+        font-size: .75rem;
+    }
+
+    /*
+ * Navbar
+ */
+
+    .navbar-brand {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    }
+
+    .navbar .navbar-toggler {
+        top: .25rem;
+        right: 1rem;
+    }
+
+    .navbar .form-control {
+        padding: .75rem 1rem;
+    }
+
+    .form-control-dark {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border-color: rgba(255, 255, 255, .1);
+    }
+
+    .form-control-dark:focus {
+        border-color: transparent;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+    }
+
+    #backend_body main {
+        height: calc(100vh - 44px);
+        overflow-y: scroll;
+    }
+
+    /* width */
+    #sidebarMenu::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 25px;
+    }
+
+    /* Track */
+    #sidebarMenu::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    #sidebarMenu::-webkit-scrollbar-thumb {
+        background: rgb(104, 35, 35);
+        border-radius: 25px;
+    }
+
+    /* Handle on hover */
+    #sidebarMenu::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .nav-item {
+        padding: 0px 0px;
+
+        .nav-link {
+            // border: 1px solid red;
+            padding: 5px 0px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+            transition-duration: .3s;
+            color: rgb(110, 110, 110);
+        }
+
+        .sign-out-btn {
+            border: 0;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        &:last-child {
+            a {
+                border-bottom: 1px solid transparent;
+            }
+        }
+
+        &:hover {
+            a {
+                color: rgb(0, 0, 0);
+                border-bottom: 1px solid rgb(104, 35, 35);
+            }
+
+            .sign-out-btn {
+                border: 0;
+                color: rgb(255, 119, 0);
+            }
+        }
+    }
+
+
+
+    #sidebarMenu {
+        @media (max-width: 991.99px) {
+            max-width: 200px;
+            display: none;
+
+            &.show {
+                display: block;
+            }
+        }
+    }
+
+    .main_content {
+        overflow-y: scroll;
+        height: calc(100vh - 49px);
+    }
+}
+
+.custom_check_box {
+
+    display: block;
+    position: relative;
+    padding-left: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* Hide the browser's default checkbox */
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #c7c7c7;
+
+        &.disabled {
+            background-color: red;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: rgb(152, 0, 0);
+            }
+
+            &::before {
+                content: "+";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                transform: rotate(45deg);
+                font-size: 15px;
+                color: white;
+            }
+        }
+    }
+
+    /* On mouse-over, add a grey background color */
+    &:hover input~.checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    input:checked~.checkmark {
+        background-color: #2196F3;
+        border-radius: 50%;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    input:checked~.checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .checkmark:after {
+        left: 50%;
+        top: 50%;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg) translate(-126%, -32%);
+    }
+}
+
+.table_list {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+    justify-content: space-between;
+
+    .single_table {
+        position: relative;
+        border: 1px solid #dedede;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: inset 0px 0px 10px #d4d4d4;
+
+        .table_no {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 50px;
+            width: 50px;
+            background-color: gray;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            border-radius: 50%;
+        }
+
+        .custom_check_box {
+            position: absolute;
+
+            &:nth-child(1) {
+                left: 4px;
+                top: 40%;
+                transform: translateY(-50%);
+            }
+
+            &:nth-child(2) {
+                top: 4px;
+                left: 40%;
+                transform: translateX(-50%);
+            }
+
+            &:nth-child(3) {
+                top: 40%;
+                right: 29px;
+                transform: translateY(-50%);
+            }
+
+            &:nth-child(4) {
+                bottom: 20px;
+                right: 60%;
+                transform: translateX(50%);
+            }
+        }
+    }
+}
+
+.about_item:hover .offer_btn_slide a {
+    background: #b98d36;
+    color: #ffffff;
+    transition: 0.6s;
+}
+
+
+@media (max-width: 767px) {
+    #burger_product_maker_body .burger_maker_demo_wrapper .burger_ingredient_qty,
+    #burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body{
+        width: 100%;
+    }
+
+    #burger_product_maker_body .burger_maker_demo_wrapper .burger_show_demo_body ul li img {
+        width: 70px;
+    }
+}
